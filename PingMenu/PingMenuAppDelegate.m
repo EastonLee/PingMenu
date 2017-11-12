@@ -37,6 +37,26 @@
 @synthesize menuRow7;
 @synthesize menuRow8;
 @synthesize menuRow9;
+@synthesize menuRow10;
+@synthesize menuRow11;
+@synthesize menuRow12;
+@synthesize menuRow13;
+@synthesize menuRow14;
+@synthesize menuRow15;
+@synthesize menuRow16;
+@synthesize menuRow17;
+@synthesize menuRow18;
+@synthesize menuRow19;
+@synthesize menuRow20;
+@synthesize menuRow21;
+@synthesize menuRow22;
+@synthesize menuRow23;
+@synthesize menuRow24;
+@synthesize menuRow25;
+@synthesize menuRow26;
+@synthesize menuRow27;
+@synthesize menuRow28;
+@synthesize menuRow29;
 @synthesize pingHost=_pingHost;
 
 -(IBAction)quitMe:(id)sender {
@@ -74,6 +94,26 @@
     self.menuRow7.title = formatted;
     self.menuRow8.title = formatted;
     self.menuRow9.title = formatted;
+    self.menuRow10.title = formatted;
+    self.menuRow11.title = formatted;
+    self.menuRow12.title = formatted;
+    self.menuRow13.title = formatted;
+    self.menuRow14.title = formatted;
+    self.menuRow15.title = formatted;
+    self.menuRow16.title = formatted;
+    self.menuRow17.title = formatted;
+    self.menuRow18.title = formatted;
+    self.menuRow19.title = formatted;
+    self.menuRow20.title = formatted;
+    self.menuRow21.title = formatted;
+    self.menuRow22.title = formatted;
+    self.menuRow23.title = formatted;
+    self.menuRow24.title = formatted;
+    self.menuRow25.title = formatted;
+    self.menuRow26.title = formatted;
+    self.menuRow27.title = formatted;
+    self.menuRow28.title = formatted;
+    self.menuRow29.title = formatted;
 }
 
 -(void)setupPinger {
@@ -156,7 +196,7 @@
     NSMutableArray* removeKeys = [NSMutableArray array];
     int n = 0;
     for (NSNumber* seq in keys) {
-        if (n>9) {
+        if (n>29) {
             [removeKeys addObject:seq];
             continue;
         }
@@ -174,9 +214,9 @@
         if (!lastSuccessfulEvent && ev.state==PingEventStateSent)
             earliestSentEvent = ev;
         
-        NSString* time = [NSString stringWithFormat:@"%1.3fs",[ev timeSinceSent]];
+        NSString* time = [NSString stringWithFormat:@"%0.0fms",[ev timeSinceSent] * 1000];
         
-        NSString* formatted = [NSString stringWithFormat:@"#%d: %@, %@",ev.sequenceNr,[ev stateName],time];
+        NSString* formatted = [NSString stringWithFormat:@"%@ %@",[ev stateName] == @"Success" ? ([ev timeSinceSent] < 0.1 ? @"✅" :@"⚠️") : @"❌",time];
         //NSLog(@"%@",formatted);
         
         switch (n) {
@@ -209,6 +249,66 @@
                 break;
             case 9:
                 self.menuRow9.title = formatted;
+                break;
+            case 10:
+                self.menuRow10.title = formatted;
+                break;
+            case 11:
+                self.menuRow11.title = formatted;
+                break;
+            case 12:
+                self.menuRow12.title = formatted;
+                break;
+            case 13:
+                self.menuRow13.title = formatted;
+                break;
+            case 14:
+                self.menuRow14.title = formatted;
+                break;
+            case 15:
+                self.menuRow15.title = formatted;
+                break;
+            case 16:
+                self.menuRow16.title = formatted;
+                break;
+            case 17:
+                self.menuRow17.title = formatted;
+                break;
+            case 18:
+                self.menuRow18.title = formatted;
+                break;
+            case 19:
+                self.menuRow19.title = formatted;
+                break;
+            case 20:
+                self.menuRow20.title = formatted;
+                break;
+            case 21:
+                self.menuRow21.title = formatted;
+                break;
+            case 22:
+                self.menuRow22.title = formatted;
+                break;
+            case 23:
+                self.menuRow23.title = formatted;
+                break;
+            case 24:
+                self.menuRow24.title = formatted;
+                break;
+            case 25:
+                self.menuRow25.title = formatted;
+                break;
+            case 26:
+                self.menuRow26.title = formatted;
+                break;
+            case 27:
+                self.menuRow27.title = formatted;
+                break;
+            case 28:
+                self.menuRow28.title = formatted;
+                break;
+            case 29:
+                self.menuRow29.title = formatted;
                 break;
                 
             default:
@@ -264,10 +364,10 @@
         
     } else if ([lastSentEvent timeSinceSent] > [lastSuccessfulEvent timeSinceSent]+.1 && lastSentEvent.sequenceNr>lastSuccessfulEvent.sequenceNr) {
         titleColor = COLOR_SLOW;
-        titleText = [NSString stringWithFormat:@"%1.3fs",[lastSuccessfulEvent timeSinceSent]];
+        titleText = [NSString stringWithFormat:@"%0.0fms",[lastSuccessfulEvent timeSinceSent] * 1000];
         
     } else if (lastSuccessfulEvent) {
-        titleText = [NSString stringWithFormat:@"%1.3fs",[lastSuccessfulEvent timeSinceSent]];
+        titleText = [NSString stringWithFormat:@"%0.0fms",[lastSuccessfulEvent timeSinceSent] * 1000];
     }
     
     

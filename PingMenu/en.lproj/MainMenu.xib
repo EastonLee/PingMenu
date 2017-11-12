@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13528" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13528"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="494" customClass="PingMenuAppDelegate">
             <connections>
                 <outlet property="menuRow0" destination="541" id="562"/>
@@ -24,6 +24,26 @@
                 <outlet property="menuRow7" destination="569" id="577"/>
                 <outlet property="menuRow8" destination="570" id="578"/>
                 <outlet property="menuRow9" destination="571" id="579"/>
+                <outlet property="menuRow10" destination="580" id="680"/>
+                <outlet property="menuRow11" destination="581" id="681"/>
+                <outlet property="menuRow12" destination="582" id="682"/>
+                <outlet property="menuRow13" destination="583" id="683"/>
+                <outlet property="menuRow14" destination="584" id="684"/>
+                <outlet property="menuRow15" destination="585" id="685"/>
+                <outlet property="menuRow16" destination="586" id="686"/>
+                <outlet property="menuRow17" destination="587" id="687"/>
+                <outlet property="menuRow18" destination="588" id="688"/>
+                <outlet property="menuRow19" destination="589" id="689"/>
+                <outlet property="menuRow20" destination="590" id="690"/>
+                <outlet property="menuRow21" destination="591" id="691"/>
+                <outlet property="menuRow22" destination="592" id="692"/>
+                <outlet property="menuRow23" destination="593" id="693"/>
+                <outlet property="menuRow24" destination="594" id="694"/>
+                <outlet property="menuRow25" destination="595" id="695"/>
+                <outlet property="menuRow26" destination="596" id="696"/>
+                <outlet property="menuRow27" destination="597" id="697"/>
+                <outlet property="menuRow28" destination="598" id="698"/>
+                <outlet property="menuRow29" destination="599" id="699"/>
                 <outlet property="theMenu" destination="536" id="544"/>
             </connections>
         </customObject>
@@ -58,6 +78,66 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem title="Ping" id="571">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="580">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="581">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="582">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="583">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="584">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="585">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="586">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="587">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="588">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="589">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="590">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="591">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="592">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="593">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="594">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="595">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="596">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="597">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="598">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Ping" id="599">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="548"/>

@@ -32,6 +32,26 @@
     NSMenuItem* menuRow7;
     NSMenuItem* menuRow8;
     NSMenuItem* menuRow9;
+    NSMenuItem* menuRow10;
+    NSMenuItem* menuRow11;
+    NSMenuItem* menuRow12;
+    NSMenuItem* menuRow13;
+    NSMenuItem* menuRow14;
+    NSMenuItem* menuRow15;
+    NSMenuItem* menuRow16;
+    NSMenuItem* menuRow17;
+    NSMenuItem* menuRow18;
+    NSMenuItem* menuRow19;
+    NSMenuItem* menuRow20;
+    NSMenuItem* menuRow21;
+    NSMenuItem* menuRow22;
+    NSMenuItem* menuRow23;
+    NSMenuItem* menuRow24;
+    NSMenuItem* menuRow25;
+    NSMenuItem* menuRow26;
+    NSMenuItem* menuRow27;
+    NSMenuItem* menuRow28;
+    NSMenuItem* menuRow29;
     BOOL darkModeOn;
 }
 
@@ -54,6 +74,26 @@
 @property (assign) IBOutlet NSMenuItem* menuRow7;
 @property (assign) IBOutlet NSMenuItem* menuRow8;
 @property (assign) IBOutlet NSMenuItem* menuRow9;
+@property (assign) IBOutlet NSMenuItem* menuRow10;
+@property (assign) IBOutlet NSMenuItem* menuRow11;
+@property (assign) IBOutlet NSMenuItem* menuRow12;
+@property (assign) IBOutlet NSMenuItem* menuRow13;
+@property (assign) IBOutlet NSMenuItem* menuRow14;
+@property (assign) IBOutlet NSMenuItem* menuRow15;
+@property (assign) IBOutlet NSMenuItem* menuRow16;
+@property (assign) IBOutlet NSMenuItem* menuRow17;
+@property (assign) IBOutlet NSMenuItem* menuRow18;
+@property (assign) IBOutlet NSMenuItem* menuRow19;
+@property (assign) IBOutlet NSMenuItem* menuRow20;
+@property (assign) IBOutlet NSMenuItem* menuRow21;
+@property (assign) IBOutlet NSMenuItem* menuRow22;
+@property (assign) IBOutlet NSMenuItem* menuRow23;
+@property (assign) IBOutlet NSMenuItem* menuRow24;
+@property (assign) IBOutlet NSMenuItem* menuRow25;
+@property (assign) IBOutlet NSMenuItem* menuRow26;
+@property (assign) IBOutlet NSMenuItem* menuRow27;
+@property (assign) IBOutlet NSMenuItem* menuRow28;
+@property (assign) IBOutlet NSMenuItem* menuRow29;
 @property (retain,nonatomic) NSString* pingHost;
 @property (retain,nonatomic) NSDate* lastSeen;
 
