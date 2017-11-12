@@ -6,7 +6,7 @@ h2. tl;dr
 
 Adds a status menu to the OS X menu bar showing the current ping time to google.com
 
-!https://github.com/kalleboo/PingMenu/raw/master/screenshot.png!
+!https://github.com/EastonLee/PingMenu/raw/master/screenshot.png!
 
 h2. Why did you make this
 
